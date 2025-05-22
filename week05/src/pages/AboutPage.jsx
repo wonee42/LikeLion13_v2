@@ -1,8 +1,8 @@
 import Header from "../components/header/Header";
 import FeedbackButtons from "../components/homepage/FeedbackButton";
-// import FeedbackCards from "../components/homepage/FeedbackCard";
+import FeedbackCard from '../components/homepage/FeedbackCard';
 import styled from "styled-components";
-import ideathonImg from "../assets/images/ideathon.jpg";
+import ideathonImg from "../assets/images/About1.jpg";
 import bgImg from "../assets/images/Union.svg";
 
 export default function HomePage() {
@@ -29,7 +29,7 @@ export default function HomePage() {
           </TextBlock>
           <Image src={ideathonImg} alt="Ideathon" />
         </ImageSection>
-        <FeedbackCards />
+        <FeedbackCard />
       </MainContainer>
     </>
   );

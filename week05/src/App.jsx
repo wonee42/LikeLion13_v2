@@ -1,7 +1,14 @@
 import AppRoutes from "./routes/AppRoutes";
-import "./index.css"; // 폰트 및 글로벌 스타일 적용
+import "./index.css"; 
+import About from './pages/AboutPage';
+import Project from './pages/ProjectPage';
+import Diary from './pages/DiaryPage';
+import Header from "./components/header/Header";
 
-export default function App() {
+function App() {
   return <AppRoutes />;
 }
+
+export default App;
+
 

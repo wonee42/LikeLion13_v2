@@ -1,14 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-// import ProjectPage from "../pages/ProfectPage";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AboutPage from '../pages/AboutPage';
+import ProjectPage from '../pages/ProjectPage';
+import DiaryPage from '../pages/DiaryPage';
 
 export default function AppRoutes() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        {/* <Route path="/project" element={ <ProjectPage /> } /> */}
-        {/* 향후 다른 페이지도 여기에 추가 가능 */}
+        <Route path="/" element={<AboutPage />} />  
+        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/diary" element={<DiaryPage />} />
       </Routes>
     </Router>
   );

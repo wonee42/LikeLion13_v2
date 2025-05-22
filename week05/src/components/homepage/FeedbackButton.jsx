@@ -1,13 +1,11 @@
-import React from "react";
-import "./FeedbackButton.styles";
+import { ButtonWrapper, Button } from "./FeedbackButton.styles";
 
-function FeedbackButton() {
-   return (
-    <div>
-        <Button>
-            텍스트 작성
-        </Button>
-    </div>
-   );
+export default function FeedbackButtons() {
+  return (
+    <ButtonWrapper>
+      <Button>텍스트 후기 작성</Button>
+      <Button>이미지 후기 작성</Button>
+      <Button>소감문 제출 (PDF)</Button>
+    </ButtonWrapper>
+  );
 }
-export default FeedbackButton;

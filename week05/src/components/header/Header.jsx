@@ -1,11 +1,25 @@
-// src/components/header/Header.jsx
+import { HeaderWrapper, Logo, Nav, NavItem } from "./Header.styles";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+export default function Header() {
   return (
-    <header>
-      <h1>헤더입니다</h1>
-    </header>
-  );
-};
+    <HeaderWrapper>
+      <Logo>IDT</Logo>
+      <Nav>
+        <NavItem><Link to="/about">About</Link></NavItem>
+        <NavItem><Link to="/project">Project</Link></NavItem>
+        <NavItem><Link to="/diary">Diary</Link></NavItem>
+       
+      </Nav>
+      <Logo></Logo>
+      <Nav>
+        <NavItem><Link to="/about">About</Link></NavItem>
+        <NavItem><Link to="/project">Project</Link></NavItem>
+        <NavItem><Link to="/diary">Diary</Link></NavItem>
+      
+      </Nav>
 
-export default Header; 
+
+    </HeaderWrapper>
+  );
+}

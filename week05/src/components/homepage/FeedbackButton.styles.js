@@ -1,16 +1,33 @@
 import styled from "styled-components";
 
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+`;
+
 export const Button = styled.button`
-  background-color: #007bff;
+  width: 300px;
+  height: 150px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #636363 0%, #1c1c1c 100%);
   color: white;
-  font-weight: bold;
-  padding: 10px 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 1.3s;
+  color: #fefefe;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 
   &:hover {
-    background-color: #0056b3;
+    background: #444;
   }
 `;
+
